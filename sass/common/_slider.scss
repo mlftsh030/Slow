@@ -1,0 +1,148 @@
+/*--------------------------------------------------------------
+  5. Slider
+----------------------------------------------------------------*/
+.cs_slider {
+  position: relative;
+}
+
+.slick-slide img {
+  display: initial;
+}
+
+.slick-arrow {
+  cursor: pointer;
+}
+
+.draggable {
+  cursor: url(../images/drag.png) 16 9, ew-resize !important;
+}
+
+.cs_slider.cs_style_2 {
+  .slick-list {
+    padding: 30px 0;
+    margin-bottom: -30px;
+    margin-top: -30px;
+  }
+
+  .cs_slider_wrapper {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .slick_slide_in {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.cs_slider.cs_style_1 {
+  .slick-list {
+    overflow: visible;
+  }
+
+  .slick-slide {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+  .slick-active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.cs_slider_arrows.cs_style_1 {
+  .cs_left_arrow,
+  .cs_right_arrow {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: var(--accent);
+      border-color: var(--accent);
+      color: var(--white);
+    }
+  }
+
+  .cs_left_arrow {
+    left: -80px;
+    @media (max-width: 1300px) {
+      left: -25px;
+    }
+  }
+
+  .cs_right_arrow {
+    right: -80px;
+    @media (max-width: 1300px) {
+      right: -25px;
+    }
+  }
+}
+
+.cs_pagination.cs_style_1 {
+  display: flex;
+  @media (max-width: 575px) {
+    justify-content: center;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 35px;
+    display: flex !important;
+    gap: 5px;
+  }
+
+  li {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    &.slick-active {
+      button {
+        background-color: var(--accent);
+        transform: scale(1.333);
+      }
+    }
+  }
+
+  button {
+    height: 12px;
+    width: 12px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 0;
+    text-indent: 100px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+}
+
+@media (min-width: 992px) {
+  .cs_mobile_show {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .cs_mobile_hide {
+    display: none !important;
+  }
+}

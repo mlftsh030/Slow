@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+  14. Comments
+----------------------------------------------------------------*/
+.cs_comments {
+  margin-top: 26px;
+
+  h3 {
+    margin-bottom: 27px;
+  }
+
+  .cs_comment:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .cs_comment_body {
+    position: relative;
+    padding-left: 80px;
+    max-width: 770px;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border: 1px dashed var(--accent);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .cs_reply_btn {
+    width: max-content;
+    margin-left: auto;
+
+    a {
+      background-color: var(--accent);
+      color: var(--white);
+      padding: 5px 15px;
+
+      &:hover {
+        background-color: var(--primary);
+      }
+    }
+  }
+
+  .cs_comment_form {
+    padding: 40px 30px 45px 30px;
+    filter: drop-shadow(0px 3px 13.5px rgba(27, 27, 206, 0.07));
+    margin-top: 100px;
+    @media (max-width: 991px) {
+      margin-top: 50px;
+    }
+
+    h3 {
+      margin-bottom: 34px;
+    }
+
+    .cs_form_field {
+      border: none;
+      resize: none;
+    }
+  }
+}

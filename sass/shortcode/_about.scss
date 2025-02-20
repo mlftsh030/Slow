@@ -1,0 +1,68 @@
+/*--------------------------------------------------------------
+  21. About
+----------------------------------------------------------------*/
+
+.cs_about.cs_style_1 {
+  .cs_about_text {
+    padding-left: 80px;
+    position: relative;
+    margin-top: 25px;
+
+    &::before {
+      content: '';
+      width: 60px;
+      height: 2px;
+      background-color: var(--accent);
+      position: absolute;
+      left: 0;
+      top: 12px;
+    }
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .cs_list.cs_style_1 {
+    margin-top: 32px;
+  }
+
+  .cs_btn.cs_style_1 {
+    margin-top: 50px;
+  }
+}
+
+.cs_about.cs_style_2 {
+  .cs_about_img_sm {
+    left: 45%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    animation: rotate-xyz 20s linear infinite;
+  }
+
+  .cs_about_info {
+    padding-left: 50px;
+    @media (max-width: 1199px) {
+      padding-left: 20px;
+    }
+    @media (max-width: 991px) {
+      padding-left: 0px;
+    }
+  }
+  .cs_about_text {
+    margin-bottom: 50px;
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@keyframes rotate-xyz {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

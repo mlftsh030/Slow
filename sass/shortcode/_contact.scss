@@ -1,0 +1,48 @@
+/*--------------------------------------------------------------
+  24. Contact
+----------------------------------------------------------------*/
+.cs_contact_form {
+  .cs_input_field {
+    position: relative;
+    border-radius: 3px;
+
+    span {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      display: flex;
+    }
+  }
+
+  .cs_form_field {
+    padding: 17px 19px 17px 25px;
+    background-color: var(--white);
+    display: block;
+
+    &:focus {
+      border-color: var(--accent);
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.cs_google_map {
+  height: 620px;
+  margin-bottom: -101px;
+  @media (max-width: 991px) {
+    height: 450px;
+  }
+
+  iframe {
+    height: 100%;
+    display: block;
+    border: none;
+    width: 100%;
+    filter: grayscale(100%) invert(10%) contrast(120%);
+  }
+}

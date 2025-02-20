@@ -1,0 +1,68 @@
+/*--------------------------------------------------------------
+  22. Steps
+----------------------------------------------------------------*/
+.cs_steps.cs_style_1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 86px;
+  @media (max-width: 1199px) {
+    grid-gap: 25px;
+  }
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+  .cs_step_thumb {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px dashed var(--accent);
+    padding: 33px;
+    margin-bottom: 42px;
+    @media (max-width: 1199px) {
+      width: 280px;
+      height: 280px;
+    }
+    @media (max-width: 1199px) {
+      margin-bottom: 25px;
+    }
+  }
+  h2 {
+    margin-bottom: 15px;
+  }
+  .cs_step_number {
+    height: 80px;
+    width: 80px;
+    right: 0;
+    top: 0;
+  }
+  .cs_step {
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/arrow.png);
+      width: 112px;
+      height: 110px;
+      right: -102px;
+      top: 100px;
+      background-size: contain;
+      background-position: center;
+      @media (max-width: 1400px) {
+        content: '';
+        position: absolute;
+        width: 70px;
+        right: -79px;
+      }
+      @media (max-width: 1199px) {
+        display: none;
+      }
+    }
+    &:nth-child(3n + 0),
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

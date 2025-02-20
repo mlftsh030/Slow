@@ -1,0 +1,56 @@
+/*--------------------------------------------------------------
+  18. Tab
+----------------------------------------------------------------*/
+.cs_tab_links.cs_style_1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 25px;
+  margin: 50px 0 40px;
+  @media (max-width: 991px) {
+    gap: 10px;
+  }
+
+  li {
+    a {
+      display: inline-block;
+      padding: 8px 40px;
+      @media (max-width: 991px) {
+        padding: 8px 25px;
+      }
+
+      &:hover {
+        background-color: var(--accent);
+        color: var(--white);
+      }
+    }
+
+    &.active {
+      a {
+        background-color: var(--accent);
+      }
+    }
+  }
+}
+
+/*--------------------------------
+ Tab styling
+ -------------------------------*/
+.cs_tab {
+  display: none;
+
+  .cs_title {
+    line-height: 1.333em;
+    margin-bottom: 10px;
+  }
+
+  &.active {
+    display: block;
+  }
+  .cs_grid_3 {
+    gap: 10px;
+    .cs_gallery_item {
+      height: initial;
+    }
+  }
+}

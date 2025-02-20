@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------
+  11. Banner
+----------------------------------------------------------------*/
+.cs_banner.cs_style_1 {
+  .cs_banner_review {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cs_banner_text {
+    max-width: 480px;
+    margin-left: auto;
+  }
+
+  .cs_banner_title {
+    margin-bottom: 35px;
+  }
+
+  .cs_banner_subtitle {
+    margin-bottom: 42px;
+    max-width: 420px;
+  }
+}
+
+.cs_banner.cs_style_2 {
+  .cs_banner_text {
+    padding-left: 30px;
+  }
+
+  .cs_banner_title {
+    margin-bottom: 15px;
+  }
+
+  .cs_banner_title_mini {
+    margin-bottom: 25px;
+  }
+
+  .cs_banner_subtitle {
+    margin-bottom: 43px;
+  }
+}

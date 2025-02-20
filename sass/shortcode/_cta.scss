@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+  15. CTA
+----------------------------------------------------------------*/
+.cs_cta.cs_style_1 {
+  .cs_cta_title_mini {
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+  }
+
+  .cs_cta_subtitle {
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .cs_cta_title {
+    margin-bottom: 20px;
+  }
+
+  .cs_btn.cs_style_1 {
+    &:hover {
+      background-color: var(--white);
+      color: var(--accent);
+    }
+  }
+}
+
+.cs_partners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: calc(100% + 2px);
+  margin-bottom: -1px;
+
+  .cs_partner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    border-bottom: 1px solid #8f999e;
+    border-right: 1px solid #8f999e;
+    padding: 15px;
+    overflow: hidden;
+    @media (max-width: 575px) {
+      min-height: 120px;
+    }
+    @media (max-width: 350px) {
+      min-height: 100px;
+    }
+
+    img {
+      transition: all 0.4s ease;
+    }
+  }
+}
