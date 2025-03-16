@@ -26,7 +26,7 @@
     transitionCheckStyles,
     trigger,
     truncate,
-    wrapJQuery,
+    wrapJQueracy,
     _jQueryWrapped,
     _old,
     _ref,
