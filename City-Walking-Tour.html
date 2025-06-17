@@ -19,6 +19,69 @@
     <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/light_gallerr.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TravelAgency",
+            "name": "Slow Cape Town Tourz",
+            "url": "https://slowcapetowntourz.com",
+            "logo": "https://slowcapetowntourz.com/logo.png",
+            "image": "https://slowcapetowntourz.com/images/hero-banner.jpg",
+            "description": "Slow Cape Town Tourz offers personalized and relaxed travel experiences throughout Cape Town and nearby regions, including Cape Point, the Winelands, and the Garden Route.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Heritage Avenue",
+                "addressLocality": "Cape Town",
+                "addressRegion": "Western Cape",
+                "postalCode": "8001",
+                "addressCountry": "ZA"
+            },
+            "telephone": "+27 67 000 1234",
+            "email": "info@slowcapetowntourz.com",
+            "sameAs": [
+                "https://www.facebook.com/SlowCapeTownTourz",
+                "https://www.instagram.com/SlowCapeTownTourz"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Tour Packages",
+                "itemListElement": [{
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "TouristTrip",
+                        "name": "Cape Peninsula Tour",
+                        "description": "Enjoy a full-day guided tour exploring Cape Point, Boulders Beach, and Hout Bay with relaxed pacing.",
+                        "touristType": "Sightseer"
+                    },
+                    "price": "1800",
+                    "priceCurrency": "ZAR",
+                    "availability": "https://schema.org/InStock"
+                }, {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "TouristTrip",
+                        "name": "Winelands Tour",
+                        "description": "Visit renowned wineries in Stellenbosch and Franschhoek with wine tastings and lunch included.",
+                        "touristType": "Wine lover"
+                    },
+                    "price": "1700",
+                    "priceCurrency": "ZAR",
+                    "availability": "https://schema.org/InStock"
+                }, {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "TouristTrip",
+                        "name": "Garden Route Tour",
+                        "description": "A three-day journey exploring Knysna, Plettenberg Bay, and Tsitsikamma with overnight stays and scenic drives.",
+                        "touristType": "Adventure traveler"
+                    },
+                    "price": "6900",
+                    "priceCurrency": "ZAR",
+                    "availability": "https://schema.org/InStock"
+                }]
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -393,6 +456,8 @@
     <script src="js/select2.min.js"></script>
     <script src="js/light_gallery.min.js"></script>
     <script src="js/main.js"></script>
+
+
 </body>
 
 </html>
