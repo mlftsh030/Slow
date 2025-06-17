@@ -22,12 +22,15 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "TravelAgency",
-            "name": "Slow Cape Town Tourz",
+            "@type": "TouristInformationCenter",
+            "name": "SlowCapeTownTourz",
             "url": "https://slowcapetowntourz.com",
-            "logo": "https://slowcapetowntourz.com/logo.png",
-            "image": "https://slowcapetowntourz.com/images/hero-banner.jpg",
-            "description": "Slow Cape Town Tourz offers personalized and relaxed travel experiences throughout Cape Town and nearby regions, including Cape Point, the Winelands, and the Garden Route.",
+            "logo": "https://slowcapetowntourz.com/images/logo.png",
+            "image": [
+                "https://slowcapetowntourz.com/images/hero-banner.jpg",
+                "https://slowcapetowntourz.com/images/city.jpg"
+            ],
+            "description": "SlowCapeTownTourz is a premier Cape Town-based tour guide and transportation company specializing in city walking tours, Cape Peninsula, Winelands, and Garden Route experiences. We offer personalized, relaxed, and expert-guided tours for all travelers.",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "123 Heritage Avenue",
@@ -36,11 +39,29 @@
                 "postalCode": "8001",
                 "addressCountry": "ZA"
             },
-            "telephone": "+27 67 000 1234",
-            "email": "info@slowcapetowntourz.com",
+            "telephone": "+27 76 199 8449",
+            "email": "slowgotourz@gmail.com",
+            "areaServed": {
+                "@type": "City",
+                "name": "Cape Town"
+            },
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "08:00",
+                "closes": "16:00"
+            }],
             "sameAs": [
-                "https://www.facebook.com/SlowCapeTownTourz",
-                "https://www.instagram.com/SlowCapeTownTourz"
+                "https://www.instagram.com/slowcapetowntours_",
+                "https://www.tiktok.com/@slowcapetowntours__"
             ],
             "hasOfferCatalog": {
                 "@type": "OfferCatalog",
@@ -49,36 +70,89 @@
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "TouristTrip",
+                        "name": "City Walking Tour",
+                        "description": "Explore Cape Town's most historic and vibrant neighborhoods, including Bo-Kaap, Castle of Good Hope, and Company Gardens. Includes hotel pickup.",
+                        "itinerary": [
+                            "Bo-Kaap (Malay Quarter)",
+                            "The Castle of Good Hope",
+                            "Green Market Square",
+                            "Company Gardens",
+                            "The Slave Lodge",
+                            "City Hall"
+                        ],
+                        "touristType": "History enthusiast",
+                        "duration": "PT5H",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "800",
+                            "priceCurrency": "ZAR",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    }
+                }, {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "TouristTrip",
                         "name": "Cape Peninsula Tour",
-                        "description": "Enjoy a full-day guided tour exploring Cape Point, Boulders Beach, and Hout Bay with relaxed pacing.",
-                        "touristType": "Sightseer"
-                    },
-                    "price": "1800",
-                    "priceCurrency": "ZAR",
-                    "availability": "https://schema.org/InStock"
+                        "description": "Full-day guided tour exploring Cape Point, Boulders Beach, and Hout Bay with relaxed pacing.",
+                        "touristType": "Sightseer",
+                        "duration": "PT8H",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "1800",
+                            "priceCurrency": "ZAR",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    }
                 }, {
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "TouristTrip",
                         "name": "Winelands Tour",
                         "description": "Visit renowned wineries in Stellenbosch and Franschhoek with wine tastings and lunch included.",
-                        "touristType": "Wine lover"
-                    },
-                    "price": "1700",
-                    "priceCurrency": "ZAR",
-                    "availability": "https://schema.org/InStock"
+                        "touristType": "Wine lover",
+                        "duration": "PT8H",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "1700",
+                            "priceCurrency": "ZAR",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    }
                 }, {
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "TouristTrip",
                         "name": "Garden Route Tour",
-                        "description": "A three-day journey exploring Knysna, Plettenberg Bay, and Tsitsikamma with overnight stays and scenic drives.",
-                        "touristType": "Adventure traveler"
-                    },
-                    "price": "6900",
-                    "priceCurrency": "ZAR",
-                    "availability": "https://schema.org/InStock"
+                        "description": "Three-day journey exploring Knysna, Plettenberg Bay, and Tsitsikamma with overnight stays and scenic drives.",
+                        "touristType": "Adventure traveler",
+                        "duration": "P3D",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "6900",
+                            "priceCurrency": "ZAR",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    }
                 }]
+            },
+            "review": [{
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "4.8",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "Client"
+                },
+                "reviewBody": "Fantastic walking tour! Learned so much about Cape Town's history."
+            }],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "50"
             }
         }
     </script>
